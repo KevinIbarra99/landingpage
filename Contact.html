@@ -1,0 +1,67 @@
+<!--
+contactame .html
+Pagina que muestra mi contacto de la   Asignacion 3
+nombre = Kevin Enrique Ibarra Paez
+id= 00000181590
+-->
+
+<html>
+	<head>
+		<meta charset=utf-8">
+		<title>Contacto </title>
+
+	</head>
+	<body>
+	<form action ="mailto: kevin.ibarra@potros.itson.edu.mx?subject=Encuesta"
+              method=post enctype="text/plain">
+		<header>
+		<img src="logo_itson.jpg"  width="150" align="left" border="1" hspace="10"/>
+		<br></br>
+		<h1 align="center">Contacto</h1>
+		</header>
+		<br>
+		<br>
+		<hr />
+		
+		<nav>
+			<p> Seccion de navegacion </p>
+			<a href="index.html">Pagina Inicial</a>
+			<a href="horario.html">Horario</a>
+			<a href="Descripcion.html">Descripcion</a>
+			<a href="aficiones.html">Aficiones</a>
+			
+		</nav>
+		<hr />
+		
+		<p> Campo de entrada de texto </p>
+		<label for ="nombreId">Nombre*:</label>
+		<input type="text" id="nombreId" name="nombre" size=15 maxlenght=40 required />
+		 
+		 <p> Campo de entrada de direccion </p>
+		<label for ="direccionId">Direccion*:</label>
+		<input type="text" id="direccionId" name="direccion" size=15 maxlenght=40 required />
+		 
+		 <p> Campo de entrada de email </p>
+		<label for ="emailId">Email*:</label>
+		<input type="text" id="emailId" name="email" size=15 maxlenght=40 required />
+		 
+		 
+		 <p> Campo de entrada para ocupaciones </p>
+		 <label for ="ocupacionesId" >Ocupaciones: </label>
+		 <input type ="text" id="ocupacionesId" name="ocupacion" list="Ocupaciones" /> 
+		 <datalist id="Ocupaciones">
+                <option value="Estudiante">Estudiante</option>
+                <option value="Empleado">Empleado</option>
+            </datalist>
+			
+			
+	<div align ="center">
+		<input type ="submit" name="boton" value ="Enviar" />
+		<input type ="reset" value ="borrar" />
+	</div>
+	<hr / >
+			<footer>
+			<p align="center"> Kevin Ibarra , california #232</p>
+		</footer>
+	</body>
+</html>
